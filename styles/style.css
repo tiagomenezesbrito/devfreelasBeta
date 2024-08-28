@@ -1,0 +1,101 @@
+/* *,
+::before,
+::after {
+	box-sizing: border-box;
+}
+ */ /* O modern normalize já faz isso */
+
+:root{
+    /* Colors */
+    --clr-dark: #0C0A30;
+    --clr-purple: #4f46e5;
+    --clr-lightpurple: #F4F0FF;
+    --clr-light: #EBEBEB;
+    --clr-white: #FFFFFF;
+    --clr-ciano: #00ffffd3;
+
+   --clr-lighttest:#EBEBEB;
+    /*#211B85  */
+   --clr-blue:#1B166B;
+   --clr-darkpurple:#362B94;
+   --clr-neon: hsl(317 100% 54%);
+   --clr-bg: hsl(323 21% 16%);
+   --clr-blue-star:#6F9EF6;
+
+    /* Font sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl:1.5rem;
+    --size-2xxl:1.7rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    line-height: calc(1en + 0.5rem); /* Vai calcular a altura da linha de acordo com o tamanho da fonte */
+ }
+
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+ body{
+    font-family:'Poppins', sans-serif;;
+    /* background-color: var(--clr-light); */
+    background-color: var(--clr-white);
+    background-color: var(--clr-lightpurple);
+    
+    
+    
+    
+ }
+
+ img,
+ picture,
+ video,
+ canvas,
+ svg {
+    display: block;
+    max-width: 100%;
+    user-select: none; /* Impede que o usuário selecione esses elementos */
+ }
+
+ a{
+    color: var(--clr-white);
+    text-decoration: none;
+ }
+
+ strong {
+    /* Texto em Gradient */
+    background: linear-gradient(to right, var(--clr-blue), var(--clr-purple));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+ }
+
+ li{
+    list-style-type: none;
+ }
+
+/* 
+Header stat
+
+*/
+

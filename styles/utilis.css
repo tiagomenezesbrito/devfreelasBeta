@@ -1,0 +1,251 @@
+
+
+/* BTN */
+.special__btn {
+    
+    color: var(--clr-white);
+    font-weight:bold;
+    letter-spacing: 1px;
+    background-color: var(--clr-purple);
+    display:inline-block;
+    padding: 14px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(78, 70, 229, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.special__btn:hover{
+    transform: translateY(-3px) scale(1.025);
+    
+    
+ }
+
+
+.btn {
+    color: var(--clr-white);
+    font-weight:600;
+    letter-spacing: 1px;
+    background-color: var(--clr-purple);
+    display:inline-block;
+    padding: 14px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(78, 70, 229, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: var(--clr-purple);
+    padding: 12px 35px ;
+    /* transform:translateY(-10px); */
+    /* transform: translateY(-3px); */
+ }
+
+
+
+
+
+
+
+
+ /* Container */
+/* N pode utilizar margin: 0 auto nem padding: 0 0.5rem porque as classes de utilidade têm prioridade acima de todo os outros tipos */
+.section-center {
+    width: 100%;
+    /* min-width: 320px; */ /* Testing */
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* border: 1px solid red; */   /* útil para testar e visualizar containers  */
+}
+
+
+/* Utilizada para separar as sessões e manter um padrão */
+.section-divider {
+    margin-top: 3rem;
+    /* border: 2px solid aqua; */
+    /* border: 2px solid aqua; */
+    /* border: 2px solid aqua; */
+}
+
+
+
+
+/* Keyframes */
+ @keyframes rodar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Definindo a animação para subir e descer */
+@keyframes subirDescer {
+    0% {
+        transform: translateY(0); /* Posição inicial */
+    }
+    50% {
+        transform: translateY(-40px); /* Sobe 20px */
+    }
+    100% {
+        transform: translateY(0); /* Volta à posição inicial */
+    }
+}
+
+/* Animação combinada de rotação e subir/descer */
+@keyframes rodarSubirDescer {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    50% {
+        transform: rotate(180deg) translateY(-40px);
+    }
+    100% {
+        transform: rotate(360deg) translateY(0);
+    }
+}
+
+/* Definindo a animação de zoom */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Tamanho original */
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta para 120% do tamanho original */
+    }
+    100% {
+        transform: scale(1); /* Volta ao tamanho original */
+    }
+}
+
+/* Animação do drone */
+@keyframes drone{
+    0%{
+        transform: rotate(0deg) translate(0);
+    }
+
+    50%{
+        transform: rotate(10deg) translateY(60px);
+    }
+
+
+    100%{
+        transform: rotate(0deg) translateY(0);
+    }
+}
+
+
+
+/* Animação da estrela services */
+@keyframes star-service-rotation{
+    0%{
+         rotate:0;
+    }
+    
+    50%{
+         rotate:180deg;
+    }
+
+    100%{
+         rotate:360deg;
+    }
+}
+
+/* Animação da estrela services */
+@keyframes star-service-t{
+    0%{
+        translate:0;
+    }
+    
+    50%{
+        translate:1900px;
+    }
+
+    100%{
+        translate:0;
+    }
+}
+
+
+
+/* Mobile first Aproach */
+
+ /* xs */
+@media (min-width:475px) {
+    .section-center{
+        max-width: 475px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+ /* sm */
+@media (min-width:640px) {
+    .section-center{
+        max-width: 640px;
+    }
+    .section-divider {
+        margin-top: 5rem;
+    }
+}
+
+ /* md */
+@media (min-width:768px) {
+    .section-center{
+        width: 80vw;
+        max-width: 768px;
+    }
+}
+
+ /* lg */
+@media (min-width:1024px) {
+    .section-center{
+        max-width: 1024px;
+    }
+}
+
+ /* xl */
+@media (min-width:1280px) {
+    .section-center{
+       max-width: 1350px;
+    }
+}
+
+ /* 2xl */
+@media (min-width:1536px) {
+    /* .section-center{
+        max-width: 1536px;
+    } */
+
+    .section-divider {
+        margin-top: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
