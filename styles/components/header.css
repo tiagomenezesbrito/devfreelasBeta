@@ -150,6 +150,12 @@ NAV MOBILE START
 }
  /* md */
 @media (min-width:768px) {
+
+  .nav__mobile{
+    display: none;
+  }
+
+
   .header__menu{
       flex: 2;
       display: block;
