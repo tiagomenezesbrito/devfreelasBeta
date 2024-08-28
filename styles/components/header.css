@@ -85,8 +85,8 @@ NAV MOBILE START
   background-color: #191566 ;
   background: linear-gradient(#0C0A30,#191566 50% );
   width: 100%;
-  height: 200px;
-  height: 200px;
+  
+  height: 0;
   overflow: hidden;
   transition: all 0.5s;
 
@@ -120,8 +120,8 @@ NAV MOBILE START
 /* Hide nav mobile */
 
 
-.hide__navmobile{
-  height: 0;
+.show__navmobile{
+  height: 200px;
 }
 
 

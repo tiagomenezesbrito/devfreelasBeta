@@ -20,7 +20,7 @@ console.log(nav)
 toggle.addEventListener("click", function(){
   
 
-  nav.classList.toggle("hide__navmobile");
+  nav.classList.toggle("show__navmobile");
 
 });
 
